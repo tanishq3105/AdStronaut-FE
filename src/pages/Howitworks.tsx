@@ -1,14 +1,15 @@
 import BeforeAfterCard from "../components/BeforeAfterCard";
 import { HowWorkSection } from "../components/HowWorkSection";
-
+import beforeImg from '../assets/before.png'
+import afterImg from '../assets/after.png'
 export default function () {
   return (
     <div className="">
       <BeforeAfterCard
         hLabel="Convert Your Casual Photos Into High End Images"
         shLabel="Turn everyday photographs into studio grade photoshoots, at a fraction of cost and time."
-        beforeImageUrl="src\assets\before.png"
-        AfterImageUrl="src\assets\after.png"
+        beforeImageUrl={beforeImg}
+        AfterImageUrl={afterImg}
         imgside="right"
       />
       <BeforeAfterCard
