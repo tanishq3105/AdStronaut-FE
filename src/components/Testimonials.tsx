@@ -50,7 +50,7 @@ const TestimonialSlider: React.FC = () => {
   }, []);
 
   useEffect(() => {
-    let intervalId: NodeJS.Timeout;
+    let intervalId: ReturnType<typeof setInterval>;
     
     if (!isPaused) {
       intervalId = setInterval(nextTestimonial, 5000);
