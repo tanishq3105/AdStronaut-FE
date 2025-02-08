@@ -9,6 +9,7 @@ interface CardDetails {
   price: string;
   description: string;
   properties: string[];
+  selectedPlan?:string;
 }
 
 const Card: React.FC<CardDetails> = ({
@@ -17,6 +18,7 @@ const Card: React.FC<CardDetails> = ({
   price,
   description,
   properties,
+  selectedPlan
 }) => {
   return (
     <div
@@ -27,9 +29,6 @@ const Card: React.FC<CardDetails> = ({
     >
       {isMostPopular && (
         <SubHeading style = "w-full absolute flex items-center justify-center top-0 left-0 bg-indigo-600 text-white text-sm font-bold px-3 py-1 rounded-t-md" label = "Most Popular"/>
-        // <div className="w-full absolute flex items-center justify-center top-0 left-0 bg-indigo-600 text-white text-sm font-bold px-3 py-1 rounded-t-md">
-        //   Most Popular
-        // </div>
       )}
       <div className="flex flex-col">
         <span className="text-xl font-bold">{modelName}</span>
@@ -43,12 +42,12 @@ const Card: React.FC<CardDetails> = ({
       </div>
       <div>
         <Button
-          label="Choose plan"
-          color={`hover:bg-indigo-600 hover:text-white  ${
+          label={(modelName===selectedPlan)?"Selected":"Choose Plan"}
+          color={`transition ease-in-out duration-200  hover:bg-indigo-600 hover:text-white  ${
             isMostPopular
               ? "bg-indigo-600 text-white"
               : "bg-indigo-100 text-indigo-600"
-          }`}
+          } ${(selectedPlan===modelName)?"border border-indigo-600":""}`}
           dimensions = "w-full py-1.5 px-4 sm:py-3 rounded-lg"
         />
       </div>

@@ -1,6 +1,7 @@
 import React from "react";
 import Card from "./Card";
 import { Heading } from "./heading/Heading";
+import { SubHeading } from "./heading/Subheading";
 
 const Pricing: React.FC = () => {
   const plans = [
@@ -51,12 +52,19 @@ const Pricing: React.FC = () => {
   ];
 
   return (
-    <div>
+    <div className="py-16 sm:py-24 px-4 sm:py-16 bg-indigo-50">
+      <div className="mb-16 flex flex-col gap-4">
+
       <Heading
-        style="text-center px:4 sm:px-16 text-4xl font-bold text-black pt-4"
+        style="text-center text-3xl sm:text-4xl font-bold text-black "
         label="Pricing"
       />
-      <div className="p-10 sm:px-16 px-8 grid pb-20 grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+      <SubHeading
+      style="text-center text-gray-500"
+      label="Tailored Pricing Options for Stunning AI Fashion Model Creations"
+      />
+      </div>
+      <div className="p-10 grid pb-20 grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
         {plans.map((plan, index) => (
           <Card
             key={index}
@@ -65,6 +73,7 @@ const Pricing: React.FC = () => {
             description={plan.description}
             properties={plan.properties}
             isMostPopular={plan.isMostPopular}
+            selectedPlan="Adstronaut Free"
           />
         ))}
       </div>

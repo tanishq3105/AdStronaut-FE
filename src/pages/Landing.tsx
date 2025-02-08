@@ -10,8 +10,8 @@ export const Landing=()=>{
             <Appbar/>
             <Home/>
             <Howitworks/>
-            <Pricing/>
             <Demo/>
+            <Pricing/>
         </div>
     )
 }
