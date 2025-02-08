@@ -20,7 +20,6 @@ export default function DemoCard() {
         <div className="grid grid-cols-1 gap-y-4 md:grid md:grid-cols-2 ">
           <div className="flex justify-center">
             <div className="bg-yellow-200 aspect-[3/4] rounded-xl flex-shrink-0 w-full sm:w-[400px]">
-              {/* Add any content here */}
             </div>
           </div>
           <div className="sm:flex justify-center">

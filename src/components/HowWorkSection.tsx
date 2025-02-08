@@ -1,6 +1,11 @@
 import { Heading } from "./heading/Heading";
 import Image from "./image/Image";
 import StepCard from "./StepCard";
+import model1 from '../assets/model1.jpeg'
+import model2 from '../assets/model2.jpeg'
+import model3 from '../assets/model3.jpeg'
+import background1 from '../assets/background1.jpeg'
+import background2 from '../assets/background2.jpeg'
 
 export const HowWorkSection = () => {
   return (
@@ -38,22 +43,24 @@ export const HowWorkSection = () => {
             <div className="flex justify-center items-center gap-3 md:gap-5">
               {/* Square cards */}
               <div className="aspect-square shadow-lg rounded-2xl  sm:h-52">
-                <Image url="src\assets\model1.jpeg" style="rounded-2xl"/>
+                <Image url={model1}
+                style="rounded-2xl"/>
               </div>
               <div className="aspect-square shadow-lg rounded-2xl  sm:h-52">
-              <Image url="src\assets\model2.jpeg" style="rounded-2xl"/>
+              <Image url={model2} style="rounded-2xl"/>
               </div>
               <div className="aspect-square shadow-lg rounded-2xl  sm:h-52">
-              <Image url="src\assets\model3.jpeg" style="rounded-2xl"/>
+              <Image url={model3}
+              style="rounded-2xl"/>
               </div>
             </div>
 
             <div className=" flex gap-3 items-center justify-center">
               <div className="aspect-video shadow-lg rounded-2xl sm:h-44">
-              <Image url="src\assets\background1.jpeg" style="rounded-2xl"/>
+              <Image url={background1} style="rounded-2xl"/>
               </div>
               <div className="aspect-video shadow-lg rounded-2xl sm:h-44">
-              <Image url="src\assets\background2.jpeg" style="rounded-2xl"/>
+              <Image url={background2}style="rounded-2xl"/>
               </div>
             </div>
           </div>
