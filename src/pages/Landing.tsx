@@ -1,8 +1,10 @@
 import { Appbar } from "../components/Appbar"
 import Pricing from "../components/Pricing"
 import { Demo } from "./Demo"
+import { Faq } from "./Faq"
 import { Home } from "./Home"
 import Howitworks from "./Howitworks"
+import Testimonials from "./Testimonials"
 
 export const Landing=()=>{
     return(
@@ -12,6 +14,8 @@ export const Landing=()=>{
             <Howitworks/>
             <Demo/>
             <Pricing/>
+            <Faq/>
+            <Testimonials/>
         </div>
     )
 }

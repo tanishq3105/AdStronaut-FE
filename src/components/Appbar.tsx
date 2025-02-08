@@ -7,7 +7,7 @@ export const Appbar=()=>{
     // const navigate = useNavigate();
     return (
       <div className="">
-        <div className="fixed top-0 left-0 right-0 z-50 bg-white bg-opacity-90 backdrop-blur-md border-b border-gray-200 bg-blue-500 ">
+        <div className="fixed top-0 left-0 right-0 z-50 bg-indigo-50 bg-opacity-90 backdrop-blur-md bg-blue-500 ">
           <div className=" mx-auto px-4 py-4 flex items-center justify-between md:px-16">
             <div className="flex gap-2">
               <div className="h-8 w-8 rounded-full bg-slate-500">
