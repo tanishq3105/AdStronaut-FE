@@ -1,4 +1,5 @@
 import { Appbar } from "../components/Appbar"
+import Pricing from "../components/Pricing"
 import { Demo } from "./Demo"
 import { Home } from "./Home"
 import Howitworks from "./Howitworks"
@@ -9,6 +10,7 @@ export const Landing=()=>{
             <Appbar/>
             <Home/>
             <Howitworks/>
+            <Pricing/>
             <Demo/>
         </div>
     )
