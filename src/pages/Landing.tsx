@@ -1,4 +1,5 @@
 import { Appbar } from "../components/Appbar"
+import Footer from "../components/Footer"
 import Pricing from "../components/Pricing"
 import { Demo } from "./Demo"
 import { Faq } from "./Faq"
@@ -16,6 +17,7 @@ export const Landing=()=>{
             <Pricing/>
             <Faq/>
             <Testimonials/>
+            <Footer/>
         </div>
     )
 }
