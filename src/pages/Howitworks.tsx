@@ -2,6 +2,8 @@ import BeforeAfterCard from "../components/BeforeAfterCard";
 import { HowWorkSection } from "../components/HowWorkSection";
 import beforeImg from '../assets/before.png'
 import afterImg from '../assets/after.png'
+import bagImg1 from '../assets/bag/before.png'
+import bagImg2 from '../assets/bag/after.png'
 export default function () {
   return (
     <div className="">
@@ -15,8 +17,8 @@ export default function () {
       <BeforeAfterCard
         hLabel="Model Shots For All Fashion Items"
         shLabel="AI-driven on-model photoshoots for clothing, hats, scarves, and handbags."
-        beforeImageUrl="src\assets\before.png"
-        AfterImageUrl="src\assets\after.png"
+        beforeImageUrl={bagImg1}
+        AfterImageUrl={bagImg2}
         bgColor="bg-gray-50"
         imgside="left"
       />

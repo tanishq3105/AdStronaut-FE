@@ -28,7 +28,7 @@ const Card: React.FC<CardDetails> = ({
       justify-between w-auto h-auto rounded-lg flex flex-col bg-white p-6 py-10 shadow-lg transform transition-transform duration-200 ease-in-out hover:scale-110`}
     >
       {isMostPopular && (
-        <SubHeading style = "w-full absolute flex items-center justify-center top-0 left-0 bg-indigo-600 text-white text-sm font-bold px-3 py-1 rounded-t-md" label = "Most Popular"/>
+        <SubHeading style = "w-full absolute flex items-center justify-center top-0 left-0 bg-indigo-600 text-white text-sm font-bold px-3 py-2  rounded-t-md" label = "Most Popular"/>
       )}
       <div className="flex flex-col">
         <span className="text-xl font-bold">{modelName}</span>
