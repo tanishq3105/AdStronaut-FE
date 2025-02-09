@@ -22,7 +22,7 @@ export const Appbar = () => {
       <div
         className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
           isScrolled
-            ? "bg-white shadow-md"
+            ? "bg-white shadow-md pt-4 sm:pt-0"
             : "bg-indigo-50 bg-opacity-90 backdrop-blur-md bg-blue-500"
         }`}
       >
